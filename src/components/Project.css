@@ -1,0 +1,9 @@
+.project{
+    min-height:350px;
+    padding:2rem;
+    background:#eee;
+}
+
+.project h1{
+    font-size:1.2rem;
+}
