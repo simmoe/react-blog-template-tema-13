@@ -4,6 +4,15 @@
     grid-template-columns:repeat(auto-fit, minmax(350px, 1fr));
     gap:1rem;
 }
-.add .edit-icons{
-    margin-bottom:2rem;
+
+.add {
+    position:fixed;
+    width:100vw;
+    left:0;
+    top:10vh;
+    height:5vh;
+    background:#eee;
+    display:grid;
+    place-items:center;
+    z-index:1;
 }

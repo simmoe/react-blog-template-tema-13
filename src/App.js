@@ -5,6 +5,7 @@ import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Header from './components/Header'
 import Login from './components/Login'
+import Edit from './components/Edit'
 import firebase from './components/firebase'
 
 const App = () => {
@@ -30,6 +31,7 @@ const App = () => {
         <Projects signedIn={signedIn} path='/' />
         <Contact path='/contact' />
         <Login signedIn={signedIn} setSignedIn={setSignedIn} path='/login' />
+        <Edit path='/edit/:id' />
       </Router>
     </div>
   )

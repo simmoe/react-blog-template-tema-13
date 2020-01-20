@@ -10,6 +10,10 @@ body, html{
   box-sizing:border-box;
 }
 
+a{
+  color:black;
+}
+
 main{
   min-height:100vh;
   display:grid;
@@ -18,9 +22,12 @@ main{
   padding:20vh;
 }
 
+.edit-icons{
+  cursor: pointer;
+  transform:scale(1.5);
+}
 
-
-button{
+button, .button{
   font-size:1rem;
   cursor: pointer;
   background-color:black;
@@ -30,6 +37,14 @@ button{
   display:block;
 }
 
-.edit-icons{
-  transform:scale(1.5);
+.button{
+  background:white;
+  border:1px solid #111;
+  color:#111;
+  padding:.4rem;
+  max-width:6rem;
+  text-align: center;
+  margin-top:1rem;
 }
+
+
