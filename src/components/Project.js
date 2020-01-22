@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Project.css'
 import { MdDelete } from "react-icons/md"
 import { FaCode } from "react-icons/fa"
@@ -8,6 +8,9 @@ import parse from 'html-react-parser'
 
 
 const Project = (props) => {
+
+    const [activeProject, setActiveProject] = useState(false)
+
     const deleteProject = () => {
         if(window.confirm('sure?')){
             firebase.firestore()
@@ -20,7 +23,7 @@ const Project = (props) => {
     }
 
     return(
-        <div className='project'>
+        <div onClick={()=>setActiveProject(!activeProject)} className={activeProject ? 'project active' : 'project'}>
             {
                 props.data.defaultImage &&
                 <img src={props.data.defaultImage} alt='default' />

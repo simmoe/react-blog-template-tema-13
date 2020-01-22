@@ -1,8 +1,10 @@
 .project{
     min-height:350px;
+    width:350px;
     padding:2rem;
     background:#eee;
     position:relative;
+    margin-bottom: 30px;
 }
 
 .project h1{

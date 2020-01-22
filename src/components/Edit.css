@@ -17,3 +17,15 @@ textarea{
 .edit label{
     padding:0;
 }
+
+.edit{
+    animation:slideIn .6s ease;
+}
+@keyframes slideIn{
+    from{
+        transform:translateX(100%);
+    }
+    to{
+        transform:translateX(0);
+    }
+}

@@ -5,6 +5,7 @@ import './Header.css'
 const Header = ( props ) => {
     return(
         <header>
+            
             <Link to='/'>home</Link>
             <Link to='/contact'>kontakt</Link>
             <Link to='/login'>
