@@ -1,15 +1,12 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './Project.css'
 import { MdDelete } from "react-icons/md"
 import { FaCode } from "react-icons/fa"
 import firebase from './firebase'
-import  { Link } from '@reach/router'
-import parse from 'html-react-parser'
+import  { Link, navigate } from '@reach/router'
 
 
 const Project = (props) => {
-
-    const [activeProject, setActiveProject] = useState(false)
 
     const deleteProject = () => {
         if(window.confirm('sure?')){
@@ -23,23 +20,24 @@ const Project = (props) => {
     }
 
     return(
-        <div onClick={()=>setActiveProject(!activeProject)} className={activeProject ? 'project active' : 'project'}>
+        <div className='project'>
             {
                 props.data.defaultImage &&
-                <img src={props.data.defaultImage} alt='default' />
+                <img  onClick={ () => navigate('/projects/' + props.id) } src={props.data.defaultImage} alt='default' />
+            }
+            {
+                props.data.javascript && 
+                    <h2>javascript is a feature of this project</h2>
             }
             <h1>{props.data.title}</h1>
            
-            <div>
-                {
-                props.data.description && 
-                parse(props.data.description) 
-                }
+            <div className='year'>
+                {props.data.year}
             </div>
-           
-            {
-               props.data.color && <p>farge: {props.data.color}</p>
-            }            
+            <div className='byline'>
+                {props.data.byline}
+            </div>
+            <Link to={'/projects/' + props.id}>Read more</Link>
             {
             props.signedIn &&
             <div className='admin-icons'>

@@ -1,0 +1,28 @@
+main.project-details{
+    padding:0;
+}
+.pager{
+    position:fixed;
+    width:100vw;
+    left:0;
+    top:10vh;
+    height:5vh;
+    background:#eee;
+    display:grid;
+    padding: 0 1rem 0 1rem;
+    grid-auto-flow:column;
+    gap:4rem;
+    align-items:center;
+    justify-content:center;
+    z-index:1;
+}
+
+.description img{
+    width:100%;
+    margin:1rem 0 1rem 0;
+}
+
+.project-content{
+    padding:20vh;
+    min-height:100vh;
+}

@@ -1,8 +1,21 @@
-header{
+.header-container{
     position:fixed;
     width:100vw;
     height:10vh;
     background:black;
+    display:grid;
+    place-items:center;
+    z-index:2;
+}
+
+.burger{
+    display:none;
+    z-index:2;
+    position:absolute;
+    cursor: pointer;
+}
+
+header{
     display:grid;
     grid-auto-flow:column;
     justify-content:center;
@@ -16,6 +29,30 @@ header a{
     color:#eee;
 }
 
-[aria-current='page'] {
+[aria-current='page'], .active {
     font-weight:bold;
+}
+
+@media (max-width:1000px){
+    header{
+        width:100%;
+        transform:translateY(-100%);
+        grid-auto-flow:row;
+        align-content:center;
+        min-height:100vh;
+        transition:.4s ease;
+        background-color:black;
+    }
+    header a {
+        font-size:2rem;
+    }
+    header.visible{
+        transform:translateY(0);
+    }
+    .burger{
+        display:block;
+    }
+    main{
+        padding: 20vh 5vh;
+    }
 }

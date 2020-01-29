@@ -1,12 +1,18 @@
 import React, { useState, useEffect } from 'react'
-import { Router } from '@reach/router'
+import { Router, navigate } from '@reach/router'
 import './App.css'
 import Projects from './components/Projects'
+import ProjectDetails from './components/ProjectDetails'
 import Contact from './components/Contact'
 import Header from './components/Header'
 import Login from './components/Login'
 import Edit from './components/Edit'
 import firebase from './components/firebase'
+
+const Default = () => {
+  navigate(process.env.PUBLIC_URL + '/projects')
+  return(<></>)
+}
 
 const App = () => {
 
@@ -28,7 +34,9 @@ const App = () => {
     <div>
       <Header signedIn={signedIn} />
       <Router>
-        <Projects signedIn={signedIn} path='/' />
+        <Default path='/' Default />
+        <Projects signedIn={signedIn} path='/projects' />
+        <ProjectDetails path='/projects/:id' />
         <Contact path='/contact' />
         <Login signedIn={signedIn} setSignedIn={setSignedIn} path='/login' />
         <Edit path='/edit/:id' />

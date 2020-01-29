@@ -9,6 +9,17 @@ import Masonry from 'react-masonry-css'
 
 const Projects = (props) => {
     const [projects, setProjects] = useState([])
+    
+    useEffect( () => {
+        console.log('hejsa')
+        firebase
+        .firestore()
+        .collection('projects')
+        .orderBy('title')
+        .onSnapshot(
+            snapshot => setProjects(snapshot.docs)
+        )
+    }, [])
 
     const addProject = () => {
         firebase.firestore().collection('projects').add(
@@ -19,16 +30,6 @@ const Projects = (props) => {
         )
         .then( doc => navigate('/edit/' + doc.id) )
     }
-    
-    useEffect( () => {
-        firebase
-        .firestore()
-        .collection('projects')
-        .orderBy('title')
-        .onSnapshot(
-            snapshot => setProjects(snapshot.docs)
-        )
-    }, [])
 
     return(
         <main>

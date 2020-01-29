@@ -22,29 +22,3 @@ main{
   padding:20vh;
 }
 
-.edit-icons{
-  cursor: pointer;
-  transform:scale(1.5);
-}
-
-button, .button{
-  font-size:1rem;
-  cursor: pointer;
-  background-color:black;
-  color:white;
-  min-width:6rem;
-  padding:.6rem;
-  display:block;
-}
-
-.button{
-  background:white;
-  border:1px solid #111;
-  color:#111;
-  padding:.4rem;
-  max-width:6rem;
-  text-align: center;
-  margin-top:1rem;
-}
-
-
