@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-blog-template-tema-13/static/css/main.3d1755bc.chunk.css",
+    "main.js": "/react-blog-template-tema-13/static/js/main.66bed51e.chunk.js",
+    "main.js.map": "/react-blog-template-tema-13/static/js/main.66bed51e.chunk.js.map",
+    "runtime-main.js": "/react-blog-template-tema-13/static/js/runtime-main.9a9687d4.js",
+    "runtime-main.js.map": "/react-blog-template-tema-13/static/js/runtime-main.9a9687d4.js.map",
+    "static/js/2.53c1b3d3.chunk.js": "/react-blog-template-tema-13/static/js/2.53c1b3d3.chunk.js",
+    "static/js/2.53c1b3d3.chunk.js.map": "/react-blog-template-tema-13/static/js/2.53c1b3d3.chunk.js.map",
+    "index.html": "/react-blog-template-tema-13/index.html",
+    "precache-manifest.427007d7b57214dd693f53b64d3999ba.js": "/react-blog-template-tema-13/precache-manifest.427007d7b57214dd693f53b64d3999ba.js",
+    "service-worker.js": "/react-blog-template-tema-13/service-worker.js",
+    "static/css/main.3d1755bc.chunk.css.map": "/react-blog-template-tema-13/static/css/main.3d1755bc.chunk.css.map",
+    "static/js/2.53c1b3d3.chunk.js.LICENSE": "/react-blog-template-tema-13/static/js/2.53c1b3d3.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9a9687d4.js",
+    "static/js/2.53c1b3d3.chunk.js",
+    "static/css/main.3d1755bc.chunk.css",
+    "static/js/main.66bed51e.chunk.js"
+  ]
+}
