@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c9986fd70e3884555d63e2b8a7b862f5",
+    "revision": "aa08ba90e04a0f26965de6ecbeb79f67",
     "url": "/react-blog-template-tema-13/index.html"
   },
   {
-    "revision": "3a75e9a3ddda4805c63a",
+    "revision": "16b71b29c4563a05851a",
     "url": "/react-blog-template-tema-13/static/css/main.3d1755bc.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-blog-template-tema-13/static/js/2.d135ccdd.chunk.js.LICENSE"
   },
   {
-    "revision": "3a75e9a3ddda4805c63a",
-    "url": "/react-blog-template-tema-13/static/js/main.4d17de38.chunk.js"
+    "revision": "16b71b29c4563a05851a",
+    "url": "/react-blog-template-tema-13/static/js/main.2d8d5008.chunk.js"
   },
   {
     "revision": "5703992a1961926cef59",
