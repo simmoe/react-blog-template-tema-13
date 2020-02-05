@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/react-blog-template-tema-13/static/css/main.3d1755bc.chunk.css",
-    "main.js": "/react-blog-template-tema-13/static/js/main.936b8d58.chunk.js",
-    "main.js.map": "/react-blog-template-tema-13/static/js/main.936b8d58.chunk.js.map",
-    "runtime-main.js": "/react-blog-template-tema-13/static/js/runtime-main.9a9687d4.js",
-    "runtime-main.js.map": "/react-blog-template-tema-13/static/js/runtime-main.9a9687d4.js.map",
-    "static/js/2.d135ccdd.chunk.js": "/react-blog-template-tema-13/static/js/2.d135ccdd.chunk.js",
-    "static/js/2.d135ccdd.chunk.js.map": "/react-blog-template-tema-13/static/js/2.d135ccdd.chunk.js.map",
-    "index.html": "/react-blog-template-tema-13/index.html",
-    "precache-manifest.00eb053333742ad510772961df6ca97e.js": "/react-blog-template-tema-13/precache-manifest.00eb053333742ad510772961df6ca97e.js",
-    "service-worker.js": "/react-blog-template-tema-13/service-worker.js",
-    "static/css/main.3d1755bc.chunk.css.map": "/react-blog-template-tema-13/static/css/main.3d1755bc.chunk.css.map",
-    "static/js/2.d135ccdd.chunk.js.LICENSE": "/react-blog-template-tema-13/static/js/2.d135ccdd.chunk.js.LICENSE"
+    "main.css": "/blog/static/css/main.3d1755bc.chunk.css",
+    "main.js": "/blog/static/js/main.296bf4d2.chunk.js",
+    "main.js.map": "/blog/static/js/main.296bf4d2.chunk.js.map",
+    "runtime-main.js": "/blog/static/js/runtime-main.3e812e36.js",
+    "runtime-main.js.map": "/blog/static/js/runtime-main.3e812e36.js.map",
+    "static/js/2.a94e9df0.chunk.js": "/blog/static/js/2.a94e9df0.chunk.js",
+    "static/js/2.a94e9df0.chunk.js.map": "/blog/static/js/2.a94e9df0.chunk.js.map",
+    "index.html": "/blog/index.html",
+    "precache-manifest.0fe01160352179220d707a07ab961dce.js": "/blog/precache-manifest.0fe01160352179220d707a07ab961dce.js",
+    "service-worker.js": "/blog/service-worker.js",
+    "static/css/main.3d1755bc.chunk.css.map": "/blog/static/css/main.3d1755bc.chunk.css.map",
+    "static/js/2.a94e9df0.chunk.js.LICENSE": "/blog/static/js/2.a94e9df0.chunk.js.LICENSE"
   },
   "entrypoints": [
-    "static/js/runtime-main.9a9687d4.js",
-    "static/js/2.d135ccdd.chunk.js",
+    "static/js/runtime-main.3e812e36.js",
+    "static/js/2.a94e9df0.chunk.js",
     "static/css/main.3d1755bc.chunk.css",
-    "static/js/main.936b8d58.chunk.js"
+    "static/js/main.296bf4d2.chunk.js"
   ]
 }
