@@ -1,6 +1,11 @@
 main.project-details{
+    justify-content:start;
     padding:0;
 }
+.project-details img {
+    width:32vw;
+}
+
 .pager{
     position:fixed;
     width:100vw;

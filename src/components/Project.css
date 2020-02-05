@@ -1,14 +1,37 @@
 .project{
-    min-height:350px;
-    min-width:350px;
-    padding:2rem;
+    min-height:600px;
     background:#eee;
     position:relative;
-    margin-bottom: 30px;
+    display:grid;
+    place-items:center;
+    overflow:hidden;
+    cursor: pointer;
+}
+
+.project img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    transform:scale(1.2);
+    transition:.4s ease;
+}
+
+
+.project-display-content{
+    position:absolute;
+    display:grid;
+    place-items:center;
+    background:rgba(0,0,0,.4);
+    width:100%;
+    height:100%;
+    color:white;
+    transition:.5s ease;
 }
 
 .project h1{
-    font-size:1.2rem;
+    font-size:1.4rem;
+    margin:0;
+    padding:0;
 }
 
 .admin-icons{
@@ -21,14 +44,17 @@
     gap:1rem;
 }
 
-.project img{
-    width:100%;
+.project:hover > .project-display-content{
+    background:rgba(0,0,0,0);
+    transform:scale(1.2);
 }
 
-.project-details img {
-    width:32vw;
+.project:hover > img{
+    transform:scale(1);
 }
 
-main.project-details{
-    justify-content:start;
-}
+@media (max-width:1000px){
+    .project{
+        min-height:400px;
+    }
+  }

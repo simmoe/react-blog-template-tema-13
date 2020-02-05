@@ -1,31 +1,29 @@
-.projectsContainer{
-    width:100%;
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(350px, 1fr));
-    gap:1rem;
+main.projects {
+  padding: 15vh 0 0 0;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
 }
 
 .add {
-    position:fixed;
-    width:100vw;
-    left:0;
-    top:10vh;
-    height:5vh;
-    background:#eee;
-    display:grid;
-    place-items:center;
-    z-index:1;
+  position: fixed;
+  width: 100vw;
+  left: 0;
+  top: 10vh;
+  height: 5vh;
+  display: grid;
+  place-items: center;
+  background: gray;
+  box-shadow: 0 0 22px 2px rgba(255, 255, 255, .4);
+  z-index: 1;
 }
 
-.my-masonry-grid {
-    display: -webkit-box; /* Not needed if autoprefixing */
-    display: -ms-flexbox; /* Not needed if autoprefixing */
-    display: flex;
-    margin-left: -30px; /* gutter size offset */
-    width: auto;
+@media (max-width:1000px) {
+  .projects-container {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   }
-  .my-masonry-grid_column {
-    padding-left: 30px; /* gutter size */
-    background-clip: padding-box;
-  }
-   
+}

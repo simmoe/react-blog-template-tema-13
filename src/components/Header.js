@@ -22,13 +22,7 @@ const Header = ( props ) => {
             <header className={ show ? 'visible' : ''} onClick={ () => setShow(false) }>
                 <Link getProps={isPartiallyActive} to='/projects'>projects</Link>
                 <Link to='/contact'>kontakt</Link>
-                <Link to='/login'>
-                    {
-                    props.signedIn 
-                    ? 'profile'
-                    : 'login'
-                    }
-                </Link>
+                <Link to='/login'>login</Link>
             </header>        
         </div>
     )

@@ -32,7 +32,7 @@ const Projects = (props) => {
     }
 
     return(
-        <main>
+        <main className='projects'>
             {
                 props.signedIn &&
                 <div className='add'>
@@ -43,17 +43,7 @@ const Projects = (props) => {
             {
             projects.length > 0
             ?
-            <Masonry
-                breakpointCols={
-                    {
-                        default: 3,
-                        1300: 2,
-                        1100: 1
-                    }
-                }
-                className="my-masonry-grid"
-                columnClassName="my-masonry-grid_column">
-                {/* array of JSX items */}
+                <div className='projects-container'>
                 {
                     projects.map(
                         project => 
@@ -65,7 +55,7 @@ const Projects = (props) => {
                         />
                     )
                 }
-            </Masonry>
+                </div>
             :
             <ClipLoader />
             }

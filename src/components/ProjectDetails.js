@@ -8,6 +8,7 @@ import { FaChevronCircleLeft, FaChevronCircleRight } from 'react-icons/fa'
 
 const ProjectDetails = (props) => {
 
+    
     const[project,setProject] = useState()
     const[prev,setPrev] = useState()
     const[next,setNext] = useState()

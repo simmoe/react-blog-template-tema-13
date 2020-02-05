@@ -23,21 +23,20 @@ const Project = (props) => {
         <div className='project'>
             {
                 props.data.defaultImage &&
-                <img  onClick={ () => navigate('/projects/' + props.id) } src={props.data.defaultImage} alt='default' />
+                <img src={props.data.defaultImage} alt='default' />
             }
-            {
-                props.data.javascript && 
-                    <h2>javascript is a feature of this project</h2>
-            }
-            <h1>{props.data.title}</h1>
-           
-            <div className='year'>
-                {props.data.year}
+            <div onClick={ () => navigate('/projects/' + props.id) } className='project-display-content'>
+                <div>
+                    <h1>{props.data.title}</h1>
+                
+                    <div className='year'>
+                        {props.data.year}
+                    </div>
+                    <div className='byline'>
+                        {props.data.byline}
+                    </div>
+                </div>
             </div>
-            <div className='byline'>
-                {props.data.byline}
-            </div>
-            <Link to={'/projects/' + props.id}>Read more</Link>
             {
             props.signedIn &&
             <div className='admin-icons'>

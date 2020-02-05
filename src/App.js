@@ -9,13 +9,7 @@ import Login from './components/Login'
 import Edit from './components/Edit'
 import firebase from './components/firebase'
 
-const Default = () => {
-  navigate(process.env.PUBLIC_URL + '/projects')
-  return(<></>)
-}
-
 const App = () => {
-
   const [signedIn, setSignedIn] = useState(false)
 
   useEffect( () => {
@@ -34,8 +28,7 @@ const App = () => {
     <div>
       <Header signedIn={signedIn} />
       <Router>
-        <Default path='/' Default />
-        <Projects signedIn={signedIn} path='/projects' />
+        <Projects default signedIn={signedIn} path='/projects' />
         <ProjectDetails path='/projects/:id' />
         <Contact path='/contact' />
         <Login signedIn={signedIn} setSignedIn={setSignedIn} path='/login' />
